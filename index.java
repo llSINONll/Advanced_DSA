@@ -1,6 +1,4 @@
 
-//   public static void main(String[] args) {
-//     System.out.println("Hello");
 //     for(int i=0; i<5; i++){
 //       System.out.println(i);
 //     }
@@ -53,7 +51,7 @@
 
 
 
-//Day2
+//Day2:-
 
 
 // class index{
@@ -229,5 +227,223 @@
 //       }
 //       System.out.println(max);
 
+//   }
+// }
+
+
+
+//Day3:-(2D array)
+
+// class index{
+//   public static void main(String[] args) {
+//     Scanner in = new Scanner(System.in);
+//     System.out.println("Enter the no. of rows:- ");
+//     int rows = in.nextInt();
+//     System.out.println("Enter the no. of columns:- ");
+//     int columns = in.nextInt();
+//     int[][] matrix = new int[rows][columns];
+//     for (int i=0; i<rows; i++) {
+//       for (int j=0; j<columns; j++){
+//         System.out.println("Enter the Element:- ");
+//         matrix[i][j] = in.nextInt();
+//       }    
+//     }
+//     System.out.println("Your matrix is:- ");
+//     for (int i=0; i<rows; i++){
+//       for (int j=0; j<columns; j++){
+//         System.out.print(matrix[i][j] + " ");
+//       }
+//       System.out.println("");
+//     } 
+//   }
+// }
+
+//Matrix Transpose:- 
+
+// class index{
+//   public static void main(String[] args) {
+//     Scanner in = new Scanner(System.in);
+//     System.out.println("Enter the no. of rows:- ");
+//     int rows = in.nextInt();
+//     System.out.println("Enter the no. of columns:- ");
+//     int columns = in.nextInt();
+//     int[][] matrix = new int[rows][columns];
+//     for (int i=0; i<rows; i++) {
+//       for (int j=0; j<columns; j++){
+//         System.out.println("Enter the Element:- ");
+//         matrix[i][j] = in.nextInt();
+//       }    
+//     }
+//     int[][] transpose = new int[columns][rows];
+//     for (int i=0; i<rows; i++) {
+//       for (int j=0; j<columns; j++){
+//         transpose[i][j] = matrix[j][i];
+//       }    
+//     }
+//     System.out.println("Your Transpose matrix is:- ");
+//     for (int i=0; i<rows; i++){
+//       for (int j=0; j<columns; j++){
+//         System.out.print(transpose[i][j] + " ");
+//       }
+//       System.out.println("");
+//     } 
+//   }
+// }
+
+
+//Max Element in a 2D Matrix:- 
+// class index{
+//   public static void main(String[] args) {
+//       Scanner in = new Scanner(System.in);
+//       System.out.println("Enter the no. of rows:- ");
+//       int rows = in.nextInt();
+//       System.out.println("Enter the no. of columns:- ");
+//       int columns = in.nextInt();
+
+//       int[][] matrix = new int[rows][columns];
+//       for (int i=0; i<rows; i++) {
+//         for (int j=0; j<columns; j++){
+//           System.out.println("Enter the Element:- ");
+//           matrix[i][j] = in.nextInt();
+//        }    
+//       }
+//       int max = matrix[0][0];
+
+//       for (int i=0; i<rows; i++) {
+//         for (int j=0; j<columns; j++) {
+//           if (matrix[i][j]>max) {
+//               max = matrix[i][j];
+//           }
+            
+//         }
+          
+//       }
+//       System.out.println("Max element is:- "+max);
+
+//   }
+// }
+
+
+//Check if a Matrix is a Symmetric Matrix
+
+// class index{
+//   public static void main(String[] args) {
+//       Scanner in = new Scanner(System.in);
+//       System.out.println("Enter the no. of rows:- ");
+//       int rows = in.nextInt();
+//       System.out.println("Enter the no. of columns:- ");
+//       int columns = in.nextInt();
+//       int elemSym = 0;
+//       if (columns!=rows) {
+//           System.out.println("The Matrix is no Symmetric");
+//       }
+//       else{
+//         int[][] matrix = new int[rows][columns];
+//         for (int i=0; i<rows; i++) {
+//           for (int j=0; j<columns; j++){
+//            System.out.println("Enter the Element:- ");
+//            matrix[i][j] = in.nextInt();
+//         }  
+//         }  
+//         int[][] transpose = new int[columns][rows];
+//         for (int k=0; k<rows; k++) {
+//           for (int j=0; j<columns; j++){
+//             transpose[k][j] = matrix[j][k];
+//          }    
+//         }
+//         for (int l=0; l<rows; l++) {
+//           for (int j=0; j<columns; j++){
+//             if (matrix[l][j]==transpose[l][j]) {
+//                 elemSym+=1;
+//             }
+//             else{
+//               break;
+//             }
+//          }    
+//         }
+//         if (elemSym==rows*columns) {
+//             System.out.println("The matrix is Symmetric");
+//         }
+//         else{
+//           System.out.println("The matrix is not Symmetric");
+//         }
+
+//       }
+
+//   }
+// }
+
+
+//Check if a Matrix is a Symmetric Matrix (Optimized Version)
+
+
+
+
+//String:- 
+
+// class index{
+//   public static void main(String[] args) {
+//       String str = "hello";
+//       for (int i = 0; i<str.length(); i++) {
+//           System.out.println(str.charAt(i));
+//       }
+//   }
+// }
+
+//Reverse of a string:- 
+
+// class index{
+//   public static void main(String[] args) {
+//       String str = "Hello";
+//       String rstr = "";
+//       for (int i = str.length()-1; i>=0; i--) {
+//           rstr+=str.charAt(i);
+//       }
+//       System.out.println(rstr);
+//   }
+// }
+
+//Remove the duplicate character:- 
+
+// class index{
+//   public static void main(String[] args) {
+//       String str = "Hello";
+//       String nstr = "";
+//       for (int i = 0; i<str.length(); i++) {
+//           char ch = str.charAt(i);
+//           if (nstr.indexOf(ch)==-1) {
+//               nstr+=ch;
+//           }
+//       }
+//       System.out.println(nstr);
+//   }
+// }
+
+//Count the Frequency of each character:- 
+
+// class index{
+//   public static void main(String[] args) {
+//       String str = "Hello";
+//       for(int i = 0; i<str.length();i++){
+//         char ch = str.charAt(i);
+
+//       }
+//   }
+// }
+
+//Check which character duplicate first
+
+// class index{
+//   public static void main(String[] args) {
+//       String str = "Hello";
+//       String nstr = "";
+//       for (int i = 0; i<str.length(); i++) {
+//           char ch = str.charAt(i);
+//           if (nstr.indexOf(ch)!=-1) {
+//               nstr+=ch;
+//               break;
+//           }
+//       }
+//       System.out.println(nstr);
 //   }
 // }
